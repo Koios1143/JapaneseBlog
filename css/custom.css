@@ -1,0 +1,36 @@
+span.accent_plain {
+    border-top: solid 0.1rem red;
+    padding-top: 0.1rem;
+    position: relative;
+}
+
+span.accent_top {
+    border-top: solid 0.1rem red;
+    padding-top: 0.1rem;
+    position: relative;
+}
+
+span.accent_top::after {
+    content: "";
+    position: absolute;
+    top: -0.1rem;
+    bottom: 0.7rem;
+    border-right: 0.1rem solid red;
+    width: 0;
+}
+
+span.spoiler-block {
+    border-radius: 2px;
+    background-color: #333;
+}
+
+span.spoiler-text-hidden {
+    opacity: 0;
+    cursor: pointer;
+}
+
+span.spoiler-text-view {
+    opacity: 100%;
+    color: white;
+    cursor: auto;
+}
